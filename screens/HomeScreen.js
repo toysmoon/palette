@@ -1,13 +1,10 @@
 import React from "react";
 import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
   View
 } from "react-native";
+
+//component Import
+import { PaletteItem } from "../components/home/PaletteItem";
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -15,7 +12,11 @@ export default class HomeScreen extends React.Component {
   };
 
   render() {
-    return <View />;
+    return (
+      <View>
+        <PaletteItem/>
+      </View>
+    );
   }
 }
 
